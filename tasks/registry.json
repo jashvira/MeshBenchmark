@@ -1,0 +1,166 @@
+{
+  "levels": {
+    "L1": [
+      {
+        "id": "VGB1",
+        "title": "Topology Enumeration",
+        "index": 51,
+        "module": "tasks.vgb1_topology_enumeration",
+        "file": "tasks/vgb1_topology_enumeration.py"
+      },
+      {
+        "id": "VGB2",
+        "title": "Topology Edge Tasks: Enumerate Edges",
+        "index": 52,
+        "module": "tasks.vgb2_topology_edge_enumerate",
+        "file": "tasks/vgb2_topology_edge_enumerate.py"
+      },
+      {
+        "id": "VGB3",
+        "title": "Topology Edge Tasks: Classify Behaviour",
+        "index": 53,
+        "module": "tasks.vgb3_topology_edge_classify",
+        "file": "tasks/vgb3_topology_edge_classify.py"
+      },
+      {
+        "id": "VGB4",
+        "title": "Half Subdivision Neighbours",
+        "index": 54,
+        "module": "tasks.vgb4_half_subdivision_neighbours",
+        "file": "tasks/vgb4_half_subdivision_neighbours.py"
+      }
+    ],
+    "L2": [
+      {
+        "id": "VGB5",
+        "title": "Two Segments",
+        "index": 57,
+        "module": "tasks.vgb5_two_segments",
+        "file": "tasks/vgb5_two_segments.py"
+      },
+      {
+        "id": "MB2",
+        "title": "Build a Lego(tm) hemispherical shell",
+        "index": 2,
+        "module": "tasks.mb2_build_lego_hemispherical_shell",
+        "file": "tasks/mb2_build_lego_hemispherical_shell.py"
+      },
+      {
+        "id": "MB3",
+        "title": "CSG Union of Rectangular Prism and Cube",
+        "index": 3,
+        "module": "tasks.mb3_csg_union_rect_prism_cube",
+        "file": "tasks/mb3_csg_union_rect_prism_cube.py"
+      },
+      {
+        "id": "MB6",
+        "title": "Voxel Grid Projection - shadow coverage and no symmetries",
+        "index": 6,
+        "module": "tasks.mb6_voxel_grid_projection",
+        "file": "tasks/mb6_voxel_grid_projection.py"
+      },
+      {
+        "id": "MB8",
+        "title": "Fit a curve to partition 2D ascii patterns via cubic polynomials",
+        "index": 8,
+        "module": "tasks.mb8_fit_curve_partition_2d_ascii",
+        "file": "tasks/mb8_fit_curve_partition_2d_ascii.py"
+      }
+    ],
+    "L3": [
+      {
+        "id": "VGB6",
+        "title": "Delaunay Triangulation",
+        "index": 55,
+        "module": "tasks.vgb6_delaunay_triangulation",
+        "file": "tasks/vgb6_delaunay_triangulation.py"
+      },
+      {
+        "id": "VGB7",
+        "title": "Shikaku Rectangles",
+        "index": 56,
+        "module": "tasks.vgb7_shikaku_rectangles",
+        "file": "tasks/vgb7_shikaku_rectangles.py"
+      },
+      {
+        "id": "MB4",
+        "title": "Tetrahedron Shadow Coverage",
+        "index": 4,
+        "module": "tasks.mb4_tetrahedron_shadow_coverage",
+        "file": "tasks/mb4_tetrahedron_shadow_coverage.py"
+      },
+      {
+        "id": "MB7",
+        "title": "3D maze - solution requires jumping over gaps",
+        "index": 7,
+        "module": "tasks.mb7_3d_maze_jump_gaps",
+        "file": "tasks/mb7_3d_maze_jump_gaps.py"
+      },
+      {
+        "id": "MB9",
+        "title": "Hamiltonian Loop on Grid",
+        "index": 9,
+        "module": "tasks.mb9_hamiltonian_loop_grid",
+        "file": "tasks/mb9_hamiltonian_loop_grid.py"
+      },
+      {
+        "id": "MB11",
+        "title": "Hyper-snake Challenge",
+        "index": 11,
+        "module": "tasks.mb11_hyper_snake",
+        "file": "tasks/mb11_hyper_snake.py"
+      },
+      {
+        "id": "MB12",
+        "title": "Fit a loop into a square that's perimeter is smaller than the total length",
+        "index": 12,
+        "module": "tasks.mb12_loop_fit_square_perimeter",
+        "file": "tasks/mb12_loop_fit_square_perimeter.py"
+      },
+      {
+        "id": "MB13",
+        "title": "Hide and seek behind a building",
+        "index": 13,
+        "module": "tasks.mb13_hide_seek_building",
+        "file": "tasks/mb13_hide_seek_building.py"
+      },
+      {
+        "id": "MB29",
+        "title": "Cage match. Can LLMs design interlocking parts for 3D printing?",
+        "index": 29,
+        "module": "tasks.mb29_cage_match_interlocking_parts",
+        "file": "tasks/mb29_cage_match_interlocking_parts.py"
+      },
+      {
+        "id": "MB30",
+        "title": "What's the largest prime number you can 3D print without supports?",
+        "index": 30,
+        "module": "tasks.mb30_largest_prime_print_no_supports",
+        "file": "tasks/mb30_largest_prime_print_no_supports.py"
+      }
+    ],
+    "L4": [
+      {
+        "id": "MB16",
+        "title": "Pack rectangular prisms",
+        "index": 16,
+        "module": "tasks.mb16_pack_rectangular_prisms",
+        "file": "tasks/mb16_pack_rectangular_prisms.py"
+      },
+      {
+        "id": "MB23",
+        "title": "Fluid simulation",
+        "index": 23,
+        "module": "tasks.mb23_fluid_simulation",
+        "file": "tasks/mb23_fluid_simulation.py"
+      },
+      {
+        "id": "MB28",
+        "title": "AI controlling explosives, what could possibly go wrong?",
+        "index": 28,
+        "module": "tasks.mb28_explosives_control",
+        "file": "tasks/mb28_explosives_control.py"
+      }
+    ]
+  }
+}
