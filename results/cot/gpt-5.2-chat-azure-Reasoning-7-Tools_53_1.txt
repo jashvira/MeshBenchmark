@@ -1,0 +1,3 @@
+**Considering topological ambiguity**
+
+I’m thinking about how four domains meeting at a point could lead to ambiguity. In topology, if you have four different labels at the corners, it creates a situation where there are multiple ways those connections can be interpreted. It makes me realize how complex and tricky these relationships can be. It's fascinating to ponder how something seemingly simple can become so ambiguous when you dig into it further!

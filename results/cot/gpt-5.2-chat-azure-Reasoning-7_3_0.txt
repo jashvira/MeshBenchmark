@@ -1,0 +1,5 @@
+**Defining vertices and faces**
+
+I'm defining vertices with specific coordinates for a 3D shape. There are eight vertices, numbered from 0 to 7, and I'll ensure they include negative and positive values.
+
+Next, I need to follow a consistent indexing pattern for the faces while ensuring the outward normals are correctly applied. For instance, if one face has vertices in the order [3,2,1,0], the normal should point in the negative z-direction. I’ll return the information in JSON format according to the required schema.

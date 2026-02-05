@@ -1,0 +1,9 @@
+**Designing Voxel Structure**
+
+I'm structuring a response format with a large voxels array of objects, each defined by xyz coordinates. My design approach involves filling a base layer at z=0 for all x,y except those where x+y=7 since that would create holes in the projection. I can set another layer at z=1 to cover this. I'm aiming for 500 voxels in total; although projections could be solid even with fewer, I need to ensure every (x,y) has at least one voxel.**Ensuring Voxel Solidity**
+
+I'm considering that if we have only one voxel per (x,y) at varying z, the XZ projection might miss some (x,z) pairs. To ensure solidity, it seems simplest to fill in at least one y for each x,z. However, I find that filling a full slab at z=0 can achieve the desired solidity for both XY and YZ projections. I want to avoid filling cells where x+y=7, which could create forbidden cells. So, I’ll set a base slab at z=0 for all valid (x,y) pairs.**Adjusting Voxel Positions**
+
+I’ve decided to move those 8 diagonal positions to z=1 to keep the projections solid. That gives me a count of 400 voxels, but I still need 100 more to reach 500. I could add extra voxels at z=1 for positions where x<10 and y<10, avoiding both the sum of 7 and any symmetrical patterns by using an irregular layout. I realize I need to generate a list of 500 coordinates, which sounds like a lot, but it seems manageable with programmatic generation to ensure accuracy.**Adding Extra Voxels**
+
+Next, I plan to add 100 extra voxels by iterating over x from 0 to 9 and y from 0 to 9. I’ll add (x,y,2) until I hit the count of 100, but I have to avoid cases where x+y=5 since that would lead to a sum of 7. Since there are 6 combinations that hit this limit, I'll only get 94 valid positions. To cover the remaining 6, I’ll add some at z=3 using arbitrary coordinates while still avoiding the sum of 7. This will be a lengthier task, but I can manage it!

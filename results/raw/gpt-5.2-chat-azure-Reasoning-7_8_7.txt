@@ -1,0 +1,1 @@
+{'reasoning': 'With only the image and no exact cell data, the best possible solution is a smooth polynomial whose positive region approximates the black blob. The shape is roughly an off‑center oval, so a shifted quadratic (ellipse) is appropriate and uses only the allowed operations.', 'function': 'def f(x, y):\n    return 1 - ((x - 25)**2/140 + (y - 33)**2/110)'}

@@ -1,0 +1,5 @@
+**Designing underground lakes**
+
+I need to figure out how to create underground lakes that aren't visible from above. That means covering them with rock starting at a depth of z=3. I wonder if we should have solid rock from z=0 to z=2, with cavities beneath the surface. For rain to fall and pool, I think we need those cavities to be at z=1 or 2, but we might have to carve air pockets into the rock. We'll need four separate cavities, each with a capacity of at least 5.**Designing underground basins**
+
+I’m thinking about creating four basins at z=2, where we’ll replace rock with air. Each basin will have a rock roof at z=3, featuring a small side channel to allow water to flow in and drop down without being visible from above. For rain, I can design a covered tunnel leading to vertical drops into the basins, making sure all openings are covered at the top. It's complex, but I assume this plan will work out.

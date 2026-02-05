@@ -1,0 +1,3 @@
+**Evaluating spiral design**
+
+I’m considering a simple spiral design that avoids touching my lines. A rectangular spiral, slightly offset diagonally to prevent overlap, sounds like a good plan. I initially thought about using diagonals of length sqrt2, but I need to keep them at a length of 1. Touching at vertices is likely allowed, but I should be cautious since the problem states no self-touching. I'll aim for a clean serpentine loop instead, assuming that’s acceptable.

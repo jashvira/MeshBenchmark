@@ -1,0 +1,1 @@
+{'reasoning': 'A smooth implicit polynomial that produces a single irregular blob roughly matching the provided silhouette. The zero level set defines the boundary; positive values produce the filled black region.', 'function': 'def f(x, y):\n    return 1 - (x-70)**2/1600 - (y-75)**2/1200 + (x-70)*(y-75)*(x-40)/200000 - (y-90)**3/300000'}

@@ -1,0 +1,3 @@
+**Outlining reasoning approaches**
+
+I need to focus on reasoning for this puzzle. It seems the user expects exploration rather than an exact number proof. That’s tricky! I might describe my approach and claim a plausible number, but that feels risky. It could be better to outline my method and assert that it's higher than 7cm. However, since the question asks for the largest prime number, I might need to answer conceptually instead of computing it. I want to be honest and provide a strategy rather than an exact answer.

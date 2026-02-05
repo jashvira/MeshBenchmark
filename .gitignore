@@ -4,6 +4,8 @@
 **.lock
 **.pyc
 .env
+.venv/
+.DS_Store
 
 # Downloaded astronomical data (test 45)
 hip_main.dat

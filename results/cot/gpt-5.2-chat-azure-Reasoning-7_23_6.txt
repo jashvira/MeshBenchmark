@@ -1,0 +1,3 @@
+**Planning walls for basins**
+
+I'm thinking about how to build solid walls for each basin at a height of z=3-4, extending out by 1 unit. The interior should be hollow to allow for airflow, creating an open cavity on top. Wait, maybe a roof isn't necessary; just the walls would do. To simplify things, I could consider building perimeter walls as rock columns. While it feels complex, it seems like a workable plan, so I’ll describe several earthworks.

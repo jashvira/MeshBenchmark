@@ -1,0 +1,5 @@
+**Analyzing hexagon dimensions**
+
+I need to create a closed polygon with 6 edges, each of length 1, that fits within a square of side 2. It should be non-self-intersecting and touch the boundary but not cross it. A regular hexagon with a side length of 1 has a circumradius of about 1, meaning it fits perfectly within a circle of radius 1. I’m calculating the coordinates for the vertices by considering its orientation and angles — aiming to ensure accuracy!**Calculating hexagon coordinates**
+
+I figured out that the distance between adjacent points on a circle with a radius of 1 is a chord length of 1, using the formula 2 sin(π/6). My hexagon's center is at (1,1), with points at angles 0°, 60°, 120°, 180°, 240°, and 300°. The coordinates I’ve got are: (2,1), (1.5, 1+√3/2), (0.5, 1+√3/2), (0,1), (0.5, 1-√3/2), and (1.5, 1-√3/2). They all fit within the square, and touching the boundary at x=0 and x=2 is acceptable!

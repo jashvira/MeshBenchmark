@@ -1,0 +1,3 @@
+**Evaluating projections and symmetry**
+
+I’m working on projections that will be solid squares of 6x6, fitting within a 12x12 grid but only using coordinates from 0 to 5. I realized that removing certain asymmetric voxels affects symmetries, which adds complexity. I need to figure out which 16 voxels to remove from the total of 216, leaving me with 200. I could list those or generate the list programmatically, but the task is feeling a bit overwhelming. I’ll proceed to enumerate the remaining voxels layer by layer.

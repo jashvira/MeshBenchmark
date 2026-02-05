@@ -1,0 +1,3 @@
+**Returning label strings**
+
+Okay, I'm thinking they need a list of exact label strings. It seems like they just want the labels without any extra wrapping. The system mentioned a structured response format with a labels array. So, I should definitely use that format, ensuring it’s a clear array of strings. I’ll keep it simple and focus on delivering precisely what they’re asking for, without any unnecessary embellishments.

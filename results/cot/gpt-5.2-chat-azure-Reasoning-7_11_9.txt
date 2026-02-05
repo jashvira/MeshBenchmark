@@ -1,0 +1,3 @@
+**Formatting a response**
+
+I’m checking quickly to ensure the approach feels unique. I think this is a valid, reasonably long path, so I’ll return the output as a plain list. There isn’t a specific format I need to follow, although the system provides a structured_response schema. Still, that’s not required, so I’ll stick with a JSON-like list for clarity and simplicity. I want to make sure the user finds it useful!

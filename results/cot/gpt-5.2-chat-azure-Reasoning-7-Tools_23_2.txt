@@ -1,0 +1,7 @@
+**Designing a water basin**
+
+I'm trying to create a closed bowl where the bottom is at z=6, surrounded by rock. Water will fall to z=6 and be trapped, but I need to ensure the sides are also at z=6 to prevent escape. Flood fill checks for air at z-1; if there's reachable air at z=5, the water will move there. So, the rock beneath z=6 must be solid to keep the water contained. The edges also need to be closed to avoid horizontal flow.**Designing a secure basin**
+
+I'm thinking about the design to prevent horizontal flow, even though the rules don’t specify it unless flood filling to z-1. I want to create a 3x3 cavity centered at z=6 with air, surrounded by a rock ring at the same level. It’ll also have a solid rock slab at z=5 and support columns down to the ground. These columns will prevent any floating rock, so they need to be connected to other rocks. I’ll build a pillar underneath the basin area while ensuring air is only in the inner hole.**Creating a JSON for a lake**
+
+I'm considering a lake design that requires a size of at least 2 voxels. A 3x3 hole would give me a total of 9 voxels, which is perfect. Now I need to craft the JSON to represent this lake effectively. I want to ensure that it accurately reflects the specifications while still being functional in whatever context I'm using it. This should create a nice, compact representation of the lake dimensions! Let’s get started on the JSON structure.

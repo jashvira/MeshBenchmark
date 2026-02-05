@@ -1,0 +1,5 @@
+**Defining basin structures**
+
+I'm figuring out how to stay at elevation z=5, with the ground or water below it at z=4. The basin at z=4 has rock, while the walls leading up to z=6 enclose air at z=5, where the water will be. I need three separate basins for water distribution, considering enough rainfall to fill them all.
+
+I'll define three square rings for lakes at different elevations, ensuring they don’t overlap laterally. Let's place them with coordinates around (24,24) for effective organization.

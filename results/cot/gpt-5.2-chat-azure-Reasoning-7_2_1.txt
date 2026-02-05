@@ -1,0 +1,5 @@
+**Exploring spatial optimization**
+
+I'm tackling a complex spatial optimization problem that doesn't have a precise solution. The user wants a list of bricks, so I might consider approximating by layering rings in a hemispherical shape. With hemisphere radii of 50–80 mm and brick dimensions around 32x16x9.6 mm, it's clear that I’d end up needing a lot of bricks — possibly hundreds. 
+
+Instead, I think I could provide a reasonable approximate layered shell using about 40–60 bricks. I just need to keep my output structured, ensuring there are no overlaps and that the bricks connect well.

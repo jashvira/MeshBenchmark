@@ -1,0 +1,1 @@
+{'reasoning': 'The shape appears to be a rotated ellipse centered near the middle of the 96×96 grid. A quadratic polynomial with a cross term is sufficient to model a tilted elliptical region. The sign of the polynomial defines black (>0) versus white (≤0).', 'function': 'def f(x, y):\n    return 3*(x-48)**2 + 5*(y-48)**2 - 4*(x-48)*(y-48) - 2500'}

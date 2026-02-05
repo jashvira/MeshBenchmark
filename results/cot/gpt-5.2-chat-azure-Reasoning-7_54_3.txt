@@ -1,0 +1,12 @@
+**Clarifying bit order**
+
+I need to be careful when discussing bit order. I initially assumed that b0 is the least significant bit (LSB) and b3 is the most significant bit (MSB). Actually, the bit tree interpretation tells me that the first split identifies the most significant bit. If I'm interpreting this correctly, then for binary sequences, if b0=0 and b3=1, that results in x=01, which is 1. Conversely, for x=2, that would translate to binary 10, meaning b0=1 and b3=0.**Analyzing bit combinations**
+
+I've determined that when b0=1 and b3=0, and similarly for y with b1=0 and b4=1, I get a set of bits that yield 100011. For y, considering the subsets: 
+
+For y- (1,0,1) with bits 00, it gives me 000101.
+For y+ (1,2,1) with bits 10, I result in 010101.
+
+For z, with similar calculations:
+
+For z- (1,1,0) yielding 000110 and z+ (1,1,2) gives me 001110. All these represent valid leaves, which I need to list out.

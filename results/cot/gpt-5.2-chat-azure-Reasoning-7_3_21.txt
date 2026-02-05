@@ -1,0 +1,11 @@
+**Defining a hollow cube frame**
+
+I'm working on a union of six rectangular prisms to create a hollow cube frame. I've got slabs, A and B, that are 20x20 and centered at the origin with a thickness of 2, extending along the z-axis. Slabs C and D are positioned on y = ±9, and sizes are 20x2x16, while E and F focus on x = ±9, with sizes of 2x16x16. This structure results in a hollow cube with an outer boundary of [-10,10]^3 and an inner cavity of [-8,8]^3.**Analyzing polyhedron faces**
+
+I'm considering the structure's faces, which include six outer faces and six inner faces. The normals for the outer faces point outward, while for the inner cavity, they should point inward. This creates a watertight polyhedron with a hole. We can have non-convex shapes and faces with more than four vertices. I can represent this shape with 12 square faces, totaling 16 vertices—8 for the outer and 8 for the inner. I'll make sure to index everything carefully.**Listing vertices and faces**
+
+Let's outline the vertices for the polyhedron. The outer cube corners are defined by coordinates from the lists 0 to 7, ranging from -10 to 10. The inner cube corners are also clearly outlined, from 8 to 15, at slightly smaller coordinates (-8 to 8).
+
+Next, I need to organize the outer faces, making sure their normals point outward. For instance, the bottom face at z=-10 uses vertices 3, 2, 1, and 0. The inner faces require careful attention to direction, ensuring the normals point inward. For the bottom face at z=-8, the vertices are 8 to 11, ordered counterclockwise to respect the correct orientation.**Defining inner cavity faces**
+
+I'm working on the normals for the inner cavity faces. Since the cavity interior is below, the normal will be -z for the bottom face, using the order [15, 14, 13, 12]. For the inner front face at y=-8, I have vertices [8, 9, 13, 12], and the normal should point +y, ordered counterclockwise. The back face at y=8 uses vertices [11, 10, 14, 15] with a -y normal. Additionally, for the left and right inner faces, I'll ensure consistency and proper orientation, aiming to keep the structure watertight.

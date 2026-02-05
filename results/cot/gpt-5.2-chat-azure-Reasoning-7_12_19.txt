@@ -1,0 +1,7 @@
+**Considering polygon boundaries**
+
+I’m thinking about how to ensure a simple polygon without touching edges. Adjacent edges can touch at vertices, but non-adjacent vertices shouldn’t coincide. Using a grid with spacing of 1 might risk touching at corners unless I avoid diagonals. I’m also considering creating a spiral-like orthogonal polygon to fill the area. The convex hull could approach the area of a square, like a 9x9 hull with an area of 81, which is greater than 20.25.**Designing a simple polygon**
+
+I'm trying to ensure we create a simple polygon as a single closed loop. One idea is to construct an orthogonal polygon that winds inward and then back outward. A spiral polygon generally doesn't close at its center, so I'd consider a zigzag pattern around the perimeter, offset by 1 each lap to form a single loop. The outer rectangle could be 9x9 with a perimeter of 36, while an inner rectangle could be 7x7 with a perimeter of 28. I need to think about how to connect effectively while avoiding overlaps.**Mapping out coordinates**
+
+I'm working on coordinates for an outer square with corners at (0,0), (9,0), (9,9), and (0,9), while the inner square has corners at (1,1), (8,1), (8,8), and (1,8). The plan starts at (0,0) and goes around the outer square; however, I recognize I can’t revisit the (1,1) vertex when transitioning to the inner square. It feels increasingly complex, and time is short. I'm considering a 52-gon approximated circle within the 9x9 area, but that seems too large. An orthogonal spiral might be a more suitable option!

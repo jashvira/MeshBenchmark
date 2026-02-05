@@ -1,0 +1,3 @@
+**Calculating neighbors**
+
+I'm working through the problem where I consider a binary range to calculate neighbors. From my analysis, z can only be 0, which gives me neighbor values of 0 and a list of four neighbors total. The specific ranges and outputs, like the binary sequence of 001111, help clarify the structure. I need to keep this organized as I return the final list. It's a systematic approach, and I’m just making sure to capture all the necessary details!

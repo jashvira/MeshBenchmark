@@ -1,0 +1,5 @@
+**Considering polynomial fitting**
+
+I need to fit a polynomial to classify a given shape. It’s an ill-posed inverse problem, but a high-degree polynomial can approximate the bitmap using implicit surfaces. Typically, people might use sums of Gaussians or products of linear terms, but I’m restricted to polynomial arithmetic. One approach could involve using a product of squared distances from white points, but the degree would be enormous! Alternatively, it might be more feasible to create a simple blob-like polynomial that just approximates the shape.**Creating a polynomial blob**
+
+The rule indicates that black is defined by f>0 and white by f<=0, likely expecting an approximate match to an image. Given previous problems, a low-degree polynomial usually suffices to match a silhouette. I don’t have exact data, but from the thumbnail, it looks like a roughly centered blob in the lower right area. I’ll propose a polynomial that resembles an ellipse with some deformation. I’ll craft an expression like f(x,y) = 1 - ((x-70)**2/1600 + (y-75)**2/1200) + 0.00002*(x-70)*(y-75)*(x-40).

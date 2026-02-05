@@ -1,0 +1,5 @@
+**Approximating shape from image**
+
+I need to infer the shape from an image that shows a black blob. The goal is to approximate this shape with a polynomial inequality. I think accuracy will be rough, but the user probably expects something that matches the blob reasonably well.
+
+Without exact grid data, getting it precise is impossible. But I might aim for an ellipse approximation, centered around (25, 30). The function could be something like f = 1 - ((x-25)²/100 + (y-32)²/80). That should work for the black region!

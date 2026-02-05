@@ -1,0 +1,17 @@
+**Interpreting connectivity requirements**
+
+I need to figure out what "guaranteed to connect" means in terms of edges that must be connected based on corner labels. It seems likely these edges connect endpoints with the same label. If corner labels represent classes, then edges between them must connect if both corners share the same integer. For different labels, the connections might depend on configuration. 
+
+Now, looking at the edges in Square1, it seems none of them connect since the labels are different.**Evaluating edge connectivity**
+
+In Square2, it looks like none of the edges connect since their corner labels differ: top (4 vs. 3), left (4 vs. 1), bottom (1 vs. 2), and right (2 vs. 3). So, no connections. For Square3, edges show some potential connectivity: the bottom edge connects (1 vs. 1) and the right edge does too.
+
+Now, am I supposed to list pairs of connected edges based on their corner labels? I'm pondering if edges connect through adjacency at common corners with the same labels. I’m a bit uncertain here, but it’s an interesting challenge!**Defining edge connections**
+
+I'm thinking that edges i and j might connect if they share a corner with the same label. For guaranteed connections, if both corners of an edge are of the same class, they form that class entirely. Then, connecting edges would be if two edges are of the same class and actually meet. 
+
+For example, in Square3, the bottom and right edges both have class 1 and connect at corner BR, so I could represent that connection as [2, 3]. Moving on to Square4, I see some connections as well: the left and bottom edges connect since they share class 1.**Compiling edge connections**
+
+I see that edges 1 and 2 do meet at BL, and since both are class 1, they connect. So I have that pair as [1, 2]. 
+
+For the squares, I verified Squares 1 and 2 have no connections, which is good. Now, I’ll output a list with four elements, formatted as a plain list since that seems to be what’s required. The final output will look like this: [[], [], [[2, 3]], [[1, 2]]]. That should cover everything I need!

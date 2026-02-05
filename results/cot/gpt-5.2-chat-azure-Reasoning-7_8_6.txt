@@ -1,0 +1,3 @@
+**Calculating ellipse coefficients**
+
+I’m working on the equation for an ellipse: ((X*cosθ + Y*sinθ)² / a² + (-X*sinθ + Y*cosθ)² / b² - 1). For my values, I’m choosing cosθ ≈ 0.94, sinθ ≈ 0.34, a ≈ 35, and b ≈ 25. I plan to compute the coefficients approximately since precision isn’t crucial for a visual representation. I also mentioned a simpler rotated ellipse expression, f = 3*(x-48)² + 5*(y-48)² - 4*(x-48)*(y-48) - 2500, which I think works well.

@@ -8,5 +8,6 @@
         "latex",
         "plaintext",
         "python"
-    ]
+    ],
+    "git.ignoreLimitWarning": true
 }

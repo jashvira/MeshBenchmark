@@ -1,0 +1,7 @@
+**Designing water basins**
+
+I need to propose earthworks focused on creating basins that manage water levels at z=3 and z=6 while preventing it at 4 and 5. The rain tends to be centered, so I might create two basins: one at z=3 and another at an elevated z=6, using a roof to prevent spills to level 5. Water pools if it can’t find air below, so I need to ensure proper sealing at these levels.**Creating independent catchments**
+
+I’m considering constructing two catchments that are separately exposed to rain. One would be a shallow depression at z=3, while the other would be a higher platform with a bowl at z=6, designed to prevent water from flowing down to level 5. Rainfall will fill these areas until it hits solid ground. For the z=6 basin, I need to ensure there's rock surrounding the air at level 6 to maintain the water without interference from level 5.**Proposing basins layout**
+
+I'm thinking about creating two basins that are centered but slightly offset from each other, ensuring they're not connected. This design should allow for better water management in each basin while maintaining their independent functions. I’ll need to define the specific regions for each basin more clearly to make sure they efficiently capture rainwater without interference. Let's dive into the details and make it work!

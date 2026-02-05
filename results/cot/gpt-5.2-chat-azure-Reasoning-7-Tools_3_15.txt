@@ -1,0 +1,29 @@
+**Calculating union of cubes**
+
+I need to consider the union of four overlapping cubes, each with a side length of 5, centered at grid points 0 or 4. The cubes extend as follows: 
+
+Cube A at (0,0,0) covers from -2.5 to 2.5 in x, y, and z. Cube B's center is at (4,0,0) and overlaps in x from 1.5 to 6.5, while Cube C at (0,4,0) covers y from 1.5 to 6.5. Cube D, at (4,4,0), overlaps the same ranges as B and C. 
+
+Combining these, the union's footprint in the x-y space is a full square from -2.5 to 6.5 on both axes, with z remaining uniform from -2.5 to 2.5. I conclude that the union is a rectangular prism with dimensions 9 by 9 by 5, having 8 vertices defined by these ranges.**Defining shifted and scaled cube**
+
+I'm working on defining a cube similar to the previous example, but now it’s shifted and scaled. I need to ensure I use consistent outward normals and maintain the correct face winding order, which entails defining vertices in a specific sequence. 
+
+So, the vertices are defined as follows:  
+0 (-2.5,-2.5,-2.5)  
+1 (6.5,-2.5,-2.5)  
+2 (6.5,6.5,-2.5)  
+3 (-2.5,6.5,-2.5)  
+4 (-2.5,-2.5,2.5)  
+5 (6.5,-2.5,2.5)  
+6 (6.5,6.5,2.5)  
+7 (-2.5,6.5,2.5)  
+
+The face definitions follow the similar pattern:  
+- Bottom (z=-2.5): [3,2,1,0]  
+- Top (z=2.5): [4,5,6,7]  
+- Front (y=-2.5): [0,1,5,4]  
+- Back (y=6.5): [7,6,2,3]  
+- Left (x=-2.5): [3,0,4,7]  
+- Right (x=6.5): [1,2,6,5]  
+
+This setup should be watertight with no redundant vertices. I'll return it in the specified JSON format next.

@@ -1,0 +1,3 @@
+**Structuring a response**
+
+I see that I'm being told I don't have to restrict myself to axis-aligned paths, but I can if I want to. That's interesting! I should organize my response by providing structured points, making sure to maintain the ordering of properties in X and Y dimensions. Using numbers for clarity will definitely help. Let's get to it!

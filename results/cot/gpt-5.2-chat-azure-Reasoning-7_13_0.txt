@@ -1,0 +1,3 @@
+**Structuring bounding box response**
+
+The user’s question states that we need to represent a bounding box resting on the z=0 plane, so positioning will be based on its lower corner. I’ll provide the center in the xy format, keeping z implicit at 0. The response must follow a structured format with a "people" array that only includes the xy coordinates. I’ll choose four points: (-5,-5), (-6,-4), (-4,-6), and (-7,-5), ensuring there’s no overlap of 0.5 size!

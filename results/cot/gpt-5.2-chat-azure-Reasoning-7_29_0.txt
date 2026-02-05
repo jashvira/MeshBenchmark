@@ -1,0 +1,5 @@
+**Evaluating ring design**
+
+I need to generate multiple parts, and using OpenSCAD for parametric design of stackable rings seems best. The build height is 50mm max, so vertical bars must be segmented. I’m thinking the internal height could be 700mm, with bars 10mm thick and grid spacing around 75mm. I'd aim for identical ring modules, around 50mm tall. I'll also need hollow corner bars with holes for M6 threaded rods and make sure the design allows for printing without supports. Time's short, which adds pressure for a full solution.**Considering cage design**
+
+With the current constraints, I'm thinking of creating a simple vertical-bar-only cage, but the grid might need to go in both directions. It seems too complex right now, so I’ll simplify it: I'll create 14 identical ring frames, each 50mm tall. These will consist of vertical corner posts and horizontal perimeter bars. The bars would be square in cross-section, measuring 10x10mm. However, I'm not sure about the horizontal bars being vertical walls. So, I’ll proceed with caution, given the risks involved.

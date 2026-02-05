@@ -1,0 +1,13 @@
+**Designing a maze**
+
+I need to design a valid maze that has a unique solution, which is a challenge but doable. It should include at least 2 jumps and cover at least 20% of the 25 cells — meaning at least 5 cells. To avoid steep elevations, no single elevation should exceed 30% which equals a maximum of 7 cells. I’m considering movement rules and ensuring required jumps while sketching a grid that prevents alternate paths. Let's plan the path coordinates carefully.**Refining maze design**
+
+I’m thinking about how to set up the maze correctly. The third and fifth columns have to be similar, with a lower fourth column in between for jumping. I'm planning a jump of 2 cells from (1,3) to (1,5) using (1,4) as the lower point. So, I've got Row 1 as A (5), 5, 5, 0, and 5. I need to ensure other routes are blocked with significant height differences. The second jump may be vertical, and I want to place B at the bottom right. Let’s refine the grid layout!**Planning maze descent**
+
+I need to create a downward path in the maze. I’m considering descending in column 5, so Row 1 at col 5 is set at 5. For Row 2, I'll place 4, then 3 for Row 3, and then use B (0) at the bottom. However, I can't have a difference of 2 between steps, so I’ll need an extra step. I’ll adjust Row 4 to 2 and Row 5 to 1 to maintain allowable differences. It might work better to move B to Row 5, col 4 instead.**Completing maze path**
+
+I'm establishing the downward path in column 5, landing on row 5 with a height of 1 before stepping to B at column 4 with a height of 0. This checks the requirement for at least 2 jumps. I could organize a horizontal jump from row 3, designing that row with column 3 at 3, column 4 at 0, and column 5 at 3. I'll ensure it's all reachable. Let’s carefully construct the rows: Row 1 will be "A5505," followed by row 2 as "99994," and row 3 as "99303."**Finalizing maze path**
+
+I'm considering forcing the route from row 3, column 5 to only go down, blocking downward movement at column 3 with a big difference. So, I have row 4 defined as "99992," and row 5 needs to be "999B1" with B at column 4. 
+
+Now, the path starts with A, jumping correctly, but I need to incorporate a second jump for uniqueness. I think blocking vertical movement might encourage a necessary jump. I’ll set row 3, column 5 at 5 and configure the grid for a more strategic design.

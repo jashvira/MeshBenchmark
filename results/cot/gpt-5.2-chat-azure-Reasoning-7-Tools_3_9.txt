@@ -1,0 +1,29 @@
+**Calculating union of boxes**
+
+I need to compute the union of two axis-aligned boxes that overlap. Let’s define the first box, Box A, which is centered at (0,0,0) with dimensions 30 x 10 x 10. This gives it extents from -15 to +15 in the x-axis, -5 to +5 in the y-axis, and -5 to +5 in the z-axis. The second box, Box B, is centered at (10,5,0) with dimensions 10 x 20 x 10, leading to extents of 5 to 15 in x, -5 to 15 in y, and -5 to +5 in z. The overlap occurs in the region specified. The union shape forms an L-shaped prism when extruded in the z-direction.**Defining vertices for extrusion**
+
+I realize that the footprint has 6 vertices, and when extruded, it creates 12 vertices in total. I’ll list the coordinates for both the bottom (z = -5) and top (z = +5) surfaces in order. 
+
+For the bottom, the vertices are:  
+v0 (-15,-5,-5),  
+v1 (15,-5,-5),  
+v2 (15,15,-5),  
+v3 (5,15,-5),  
+v4 (5,5,-5),  
+v5 (-15,5,-5).  
+
+For the top:  
+v6 (-15,-5,5),  
+v7 (15,-5,5),  
+v8 (15,15,5),  
+v9 (5,15,5),  
+v10 (5,5,5),  
+v11 (-15,5,5).  
+
+The faces will be ordered clockwise for the bottom, which should be counterclockwise for the top face. Each edge of the footprint will connect to create quad side faces.**Determining edge orders**
+
+I'm laying out the edges between the footprint vertices carefully to ensure I get the outward normals right. For the edge from v0 to v1, which runs from (-15,-5) to (15,-5), I find the outward normal points in the -y direction. So, the quad should be ordered [0,1,7,6]. 
+
+Next, I look at the east edge (v1 to v2), where the normal points +x, creating the quad [1,2,8,7]. Moving to the north edge (v2 to v3), the outward normal now points +y, forming [2,3,9,8]. 
+
+The west edge (v3 to v4) has an outward normal of +x as well, resulting in quad [3,4,10,9]. For the edge 4 to 5, the normal again points +y, producing [4,5,11,10]. Lastly, the edge 5 to 0 has an outward normal of -x with the quad [5,0,6,11].

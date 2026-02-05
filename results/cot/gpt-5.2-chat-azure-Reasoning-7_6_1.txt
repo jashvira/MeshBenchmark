@@ -1,0 +1,7 @@
+**Considering voxel arrangement**
+
+I’m thinking about the challenge of achieving three criteria at once, especially using a Latin square style. Filling an 8x8x2 slab seems tricky since we have to avoid symmetric patterns and end up with exactly 100 voxels. If I fill all layers for z=0 and z=1, I'm over the limit. The alternative would be a more complex approach of ensuring two z values for each (x,y). The user probably expects a list, so I’ll propose a constructive set using modulo patterns.**Evaluating voxel unions**
+
+I’m considering the union size, potentially around 128 minus overlaps, which occur when both conditions are true: y = (x+z) mod 8 and z = (x+y) mod 8. I wonder if this could create symmetry. For projections, while we ensure coverage between XY and XZ, YZ might need an additional condition, like x = (y+z) mod 8, but that could increase the count above 100. I think I’ll aim for 100 voxels by filling an entire 8x8x2 slab and then strategically removing some to maintain projections without creating holes, which is a bit risky but manageable.**Designing a voxel blob**
+
+I’m planning to create an asymmetric blob of 100 voxels within an 8x8x8 space. My approach will mostly fill the layers from z=0 to z=3, starting from 128 total but focusing on 100. To ensure that the projections are solid and without internal holes, the shape needs to be simply connected. I’ll systematically remove some voxels in an asymmetric way while keeping the structure robust. Alright, I’m ready to proceed!

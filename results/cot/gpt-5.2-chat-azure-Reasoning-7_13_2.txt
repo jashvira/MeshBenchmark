@@ -1,0 +1,5 @@
+**Positioning for safety**
+
+I'm figuring out the best place to position people behind a building, which is at (3,3). The building would block any rays, so I'll ensure they are safely positioned at (-6 to -10, -6 to -10). The distance sounds fine, but to avoid overlap with the building, I need to set limits. In the x direction, they can be from -6 to -3.25, and I’ll have to reconsider the y positions to avoid any overlap too.**Calculating safe positioning**
+
+I determined that the y-coordinates also need to be less than or equal to -3.25. This really shrinks the area available for placement: I found that from -6 to -3.25 only provides about 16 slots. However, I could extend placements further back along the diagonal, which allows more slots from -10 to -3.25—about 60 possible positions. I can generate specific coordinates for 40 selected positions, ensuring they’re all within safe limits. Let's list them out!

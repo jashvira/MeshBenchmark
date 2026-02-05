@@ -1,0 +1,3 @@
+**Evaluating computation limitations**
+
+I’m analyzing the axis cycle and the differences among neighbors based on bit flipping. There's some confusion around sibling nodes and the existence of certain binary values. Honestly, it feels too complex for reliable computation without a specific algorithm. I realize I need to manage the user’s expectations, though. It’s better to be upfront about my limitations rather than risk providing an unreliable answer. Let’s see how I can convey that clearly!

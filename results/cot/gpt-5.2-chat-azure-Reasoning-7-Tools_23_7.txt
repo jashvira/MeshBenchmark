@@ -1,0 +1,9 @@
+**Considering water's behavior**
+
+I'm thinking about how eventually, water will fill the lowest cavities. So, to have a lake at z=3, I’m realizing that the ground is at z=2. This means the water could pool at z=3 if it’s enclosed and there’s no air reaching z=2. However, that area is rock everywhere unless we dig. 
+
+I’m picturing a ring-shaped lake with water at z=3, leaving the center dry but requiring an enclosure to prevent spills. I wonder how the water will interact with its environment.**Planning water flow management**
+
+I’m thinking about how to manage water entering the center at z=3. Ideally, for that to happen, the water would need to be at z=4, with air below at z=3. If the center is open, rainfall might just fall straight in, filling the ring. We could prevent that by raising the center or building a roof higher than the water line. 
+
+A simpler solution might be to create a flat basin at z=3 with walls at z=4 and a central pillar at z=4 too, so rainwater can't drop into the middle. I’m assuming this will work! Now, I need to figure out an earthworks list.

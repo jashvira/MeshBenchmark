@@ -1,0 +1,17 @@
+**Analyzing edge connectivity**
+
+I'm thinking about how to determine guaranteed connections based on corner label classes. If corners share the same label class, that might guarantee an edge connection. But can we say it’s guaranteed across all configurations? I wonder if connectivity is about how edges relate to each other with same corner labels.
+
+Edges are indexed as bottom (0), right (1), top (2), left (3). For instance, if a square has all corners labeled the same, then all edges connect. But what about configurations like (1,1,1,2)? That’s not straightforward.**Examining edge connections**
+
+I'm analyzing a region where label 1 covers three corners, while label 2 is isolated at the top-left corner. The bottom edge (BL-BR) and right edge (BR-TR) both have endpoints labeled 1, which indicates they connect. The top edge mixes labels with TR=1 and TL=2, so it's a bit unclear. 
+
+However, if edges share corners and there's a consistent path of the same label, they likely connect. In this case, since the bottom and right edges meet at BR, labeled as 1, I think they do connect.**Clarifying edge connections**
+
+I'm looking at the bottom-left corner, which is labeled 1 and connects the bottom and left edges. The left edge has mixed labels, with TL=2 and BL=1, but since they meet at BL, they do connect. However, the left edge's other endpoint is 2, making it unclear if the entire edge is labeled 1. 
+
+I think that guaranteed connections mean edges belong to the same connected component. For (1,1,1,2), both bottom (0) and right (1) meet at BR, which is labeled 1. Bottom and left are mixed, so the connection isn't guaranteed. Next, we look at (1,1,2,1)...**Assessing edge connections**
+
+Now I’m looking at the edges for the configuration (1,1,2,2). The bottom and left edges are both labeled 1, so they connect at BL. However, the right and top edges are mixed labels, which leads to no connections between bottom and top since they don't share the same label.
+
+Therefore, no pairs can be formed here. For the previous configuration (1,1,1,1), all edges connect because they share the same label at both endpoints. In this case, I can list all 6 pairs for those connections.

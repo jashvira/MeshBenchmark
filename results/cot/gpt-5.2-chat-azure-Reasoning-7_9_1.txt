@@ -1,0 +1,5 @@
+**Validating coordinates**
+
+I'm attempting to map out a path through the coordinates, starting at (2,1) and checking adjacency. I confirm each step: from (2,1) to (1,1), and so on, all the way to (3,1) before returning to (2,1). 
+
+Next, I check skipped cells and see that (2,2) and (2,3) weren't included. I list the included coordinates and double-check that we have 14 unique ones. They also need to be side-adjacent. Now, I'm ready to present the ordered list in the requested format!

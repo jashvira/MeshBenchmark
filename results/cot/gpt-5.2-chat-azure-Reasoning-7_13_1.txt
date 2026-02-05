@@ -1,0 +1,3 @@
+**Evaluating line of sight**
+
+I'm thinking about the line of sight and how it relates to the sniper's perspective. If their x, y coordinates are positioned right, they should be obscured by the building's prism. It seems logical to assume any point with x < -2 and y < -2 should be hidden. I’m planning to list 20 positions as centers, keeping z at 1 (with a height of 2). I’ll set up a 5x4 grid with specific coordinates. My spacing should be greater than 0.5 for accuracy.

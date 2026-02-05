@@ -1,0 +1,3 @@
+**Analyzing cyclic labels**
+
+I'm considering a situation with three labels arranged cyclically. I figured since there are four corners, one must repeat. My suspicion is that the pairs 0,1,2,0 and 0,2,1,0 are canonical representations. Once I canonicalize them, 0,1,2,0 is straightforward, while for 0,1,0,2, the order matters. They appear structurally different but might relate through relabeling. After scanning, I confirm they equate to (0,1,2,0). So, I’ll stick with the output of just [(0,1,2,0)].

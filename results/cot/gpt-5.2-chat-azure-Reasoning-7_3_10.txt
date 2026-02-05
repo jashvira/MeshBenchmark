@@ -1,0 +1,11 @@
+**Computing vertices for extrusion**
+
+I'm defining the vertices for the outer boundary of the x-z silhouette and planning to extrude it in the y direction. The silhouette is a polyline starting at (-5,-5) and going through several points to end at (15,15). I need to check the union of the x-z plane where A covers x[-5,5], z[-5,5], B covers x[5,15], z[0,10], and C covers x[15,25], z[5,15]. I'll outline the resulting vertices and calculate the prism's total vertices, which come to 24 in total.**Defining side face normals**
+
+I need to ensure that the side faces, which are rectangles, correspond to each extruded edge and have the correct outward normals. For the top face at y=+5, the normal points in the +y direction. I should order the vertices counter-clockwise (CCW) when viewed from above. 
+
+To clarify, I’ll list vertices 0-11 for the y=-5 layer and 12-23 for the y=+5 layer. The outline I previously provided is actually CCW when plotted correctly, so I’ll define the vertices for both the top and bottom faces accordingly, reversing the order for the bottom face.**Enumerating side face coordinates**
+
+I'm defining the side faces based on the edges, where each face is represented by the outward vertices. Since the path is counter-clockwise (CCW) from the +y direction, the normal should point outward horizontally. 
+
+I'll list the coordinates for vertices 0-11 at y=-5, and then for vertices 12-23 at y=+5 with the same x and z values. The bottom face will use the reversed order of the first set, while the top face will maintain the same order. I’ll return this in JSON format.

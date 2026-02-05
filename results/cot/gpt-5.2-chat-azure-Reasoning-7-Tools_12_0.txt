@@ -1,0 +1,3 @@
+**Calculating points for a loop**
+
+I'm thinking about how to shift up by epsilon while making sure we're still below or equal to 1. I'm looking at points x from 0 to 1, and touching the boundary seems okay. It’s good that the vertices are unique and there's no self-touching. So, I’m planning to return 3 points since the loop is closed, and order matters. I’ll return points A, B, and C, and then work on the coordinates.

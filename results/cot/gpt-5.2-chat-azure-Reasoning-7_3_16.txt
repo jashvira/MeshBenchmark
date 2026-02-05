@@ -1,0 +1,3 @@
+**Explaining CSG union mesh creation**
+
+I'm realizing that I can just provide a straightforward explanation. I think it's important to clarify that creating an exact Constructive Solid Geometry (CSG) union mesh cannot be done reliably by hand. So, I believe saying no to that request is the best course of action here. It feels like a clearer approach, ensuring I communicate effectively without overcomplicating things. I hope this makes sense!

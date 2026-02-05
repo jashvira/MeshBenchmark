@@ -11572,5 +11572,117 @@
       "score": 0,
       "max": 4
     }
+  },
+  "gpt-5.2-chat-azure-Reasoning-7": {
+    "2": {
+      "title": "Build a Lego(tm) hemispherical shell",
+      "score": 0,
+      "max": 8
+    },
+    "3": {
+      "title": "CSG Union of Polyhedra",
+      "score": 0,
+      "max": 22
+    },
+    "4": {
+      "title": "Tetrahedron Shadow Coverage",
+      "score": 0.4474517068017826,
+      "max": 3
+    },
+    "6": {
+      "title": "Voxel Grid Projection - shadow coverage and no symmetries",
+      "score": 0,
+      "max": 6
+    },
+    "7": {
+      "title": "3D maze - solution requires jumping over gaps",
+      "score": 0,
+      "max": 6
+    },
+    "8": {
+      "title": "Fit a curve to partition 2D ascii patterns via cubic polynomials",
+      "score": 0,
+      "max": 9
+    },
+    "9": {
+      "title": "Hamiltonian Loop on Grid",
+      "score": 0,
+      "max": 10
+    },
+    "11": {
+      "title": "Hyper-snake Challenge",
+      "score": 3.34283145007782,
+      "max": 13
+    },
+    "12": {
+      "title": "Fit a loop into a square that's perimeter is smaller than the total length",
+      "score": 0,
+      "max": 40
+    },
+    "13": {
+      "title": "Hide and seek behind a building",
+      "score": 4.0,
+      "max": 6
+    },
+    "16": {
+      "title": "Pack rectangular prisms",
+      "score": 1.0,
+      "max": 9
+    },
+    "23": {
+      "title": "Fluid simulation",
+      "score": 5.553333333333334,
+      "max": 11
+    },
+    "28": {
+      "title": "AI controlling explosives, what could possibly go wrong?",
+      "score": 0.015625,
+      "max": 9
+    },
+    "29": {
+      "title": "Cage match. Can LLMs design interlocking parts for 3D printing?",
+      "score": 0,
+      "max": 9
+    },
+    "30": {
+      "title": "What's the largest prime number you can 3D print without supports?",
+      "score": 0,
+      "max": 1
+    },
+    "51": {
+      "title": "VGB1 \u2014 Topology Enumeration",
+      "score": 0,
+      "max": 5
+    },
+    "52": {
+      "title": "VGB2 \u2014 Topology Edge Tasks: Enumerate Edges",
+      "score": 0,
+      "max": 3
+    },
+    "53": {
+      "title": "VGB3 \u2014 Topology Edge Tasks: Classify Behaviour",
+      "score": 2,
+      "max": 3
+    },
+    "54": {
+      "title": "VGB4 \u2014 Half Subdivision Neighbours",
+      "score": 3,
+      "max": 7
+    },
+    "55": {
+      "title": "VGB6 \u2014 Delaunay Triangulation",
+      "score": 0,
+      "max": 5
+    },
+    "56": {
+      "title": "VGB7 \u2014 Shikaku Rectangles",
+      "score": 0,
+      "max": 6
+    },
+    "57": {
+      "title": "VGB5 \u2014 Two Segments",
+      "score": 1,
+      "max": 4
+    }
   }
 }

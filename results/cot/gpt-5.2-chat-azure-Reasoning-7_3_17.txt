@@ -1,0 +1,16 @@
+**Calculating union of cubes**
+
+I need to find the union of two cubes with a side length of 10, centered at (0,0,0) and (10,0,0). Each cube extends 5 units outward, with Cube A spanning x from -5 to 5 and Cube B spanning x from 5 to 15. They touch at the x=5 plane, creating a rectangular prism from x=-5 to 15, y from -5 to 5, and z from -5 to 5. I'll ensure consistent outward face winding and check the vertex order for correctness.**Defining vertices and faces**
+
+I'm going to list the vertices for the rectangular prism in an organized manner: 
+
+0: (-5,-5,-5), 
+1: (15,-5,-5), 
+2: (15,5,-5), 
+3: (-5,5,-5), 
+4: (-5,-5,5), 
+5: (15,-5,5), 
+6: (15,5,5), 
+7: (-5,5,5).
+
+Next, I’ll specify the faces, ensuring they’re aligned similarly: the bottom face at z=-5 uses vertices [3,2,1,0], and the top face at z=5 uses [4,5,6,7]. Each corresponding face is arranged correctly to avoid internal faces. Finally, I’ll prepare the return in the specified JSON format.

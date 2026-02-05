@@ -1,0 +1,9 @@
+**Exploring grid paths**
+
+I’m pondering how paths share vertices on a grid and the need to avoid touching, even at endpoints, unless they're consecutive. If the spiral has corners touching diagonally, that's still considered touching, so I need to avoid diagonal contacts too. If I adjust the grid spacing to greater than 1, that might help. I also need to consider perimeter measures as I think about filling rows and possibly utilizing a Hamiltonian cycle in a 9x10 grid. This is getting intricate!**Analyzing grid paths**
+
+I’m considering how to create a path that uses each vertex only once while allowing adjacent edges to share vertices. Touching should only refer to non-consecutive contacts. In a 9x11 grid with larger cell sizes, I need to avoid getting stuck with too few edges, aiming for 180 in total. A circular polygon might be too small, so I’ll go for a "snake" pattern in a 10x18 rectangle. I’ll construct the path by moving right and then up, calculating edges as I go. Let’s see how this works out!**Revising grid parameters**
+
+Here I am, playing with width and height for my grid — if I set the width to 18 and height to 10, I get exactly 180 horizontal edges. But then with vertical edges, I end up with too many. Maybe if I go with a width of 16 and maintain 10 rows, I'd have 169 edges total, but that still feels messy. 
+
+Given the tight constraints and time running out, I’m considering a conceptual output rather than strict geometry. A circle might be an alternative, but it wouldn’t fit perfectly. This problem is definitely challenging!
